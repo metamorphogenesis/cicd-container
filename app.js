@@ -1,11 +1,11 @@
 const express = require("express");
 const app = express();
 
-app.get("/", (req, res) => res.send("Hello Youtube!"));
+app.get("/", (req, res) => res.send("Hi there!"));
 
 app.get("/health", (req, res) => {
   res.status(200);
-  res.send("healthy");
+  res.send("I'm ok");
 });
 
 app.listen(3000, () => {
