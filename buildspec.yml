@@ -12,5 +12,7 @@ phases:
     commands:
       - docker push 778203996491.dkr.ecr.us-east-1.amazonaws.com/node:latest
       - printf '[{"name":node,"imageUri":"778203996491.dkr.ecr.us-east-1.amazonaws.com/node:latest"}]' > imagedefinitions.json
+      - ls
+      - nano imagedefinitions.json
 artifacts:
   files: imagedefinitions.json
